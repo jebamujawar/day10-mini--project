@@ -48,5 +48,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             .scrollIntoView({ behavior: "smooth" });
     });
 });
+
+//for Toggle button
+let toggleBtn = document.getElementById("btnToggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  // Change button text
+  if (document.body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "Light Mode";
+  } else {
+    toggleBtn.textContent = "Dark Mode";
+  }
+});
+
  
 

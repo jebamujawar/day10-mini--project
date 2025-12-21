@@ -1,12 +1,29 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding-top: 0px;
+    background-color:#a1e9d4;
 }
 
+ /* Sticky Navbar */
 nav {
+  background:#c1eade;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+ 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/*nav {
     background: #333;
     padding: 10px;
-}
+}*/
 
 nav ul {
     display: flex;
@@ -20,13 +37,25 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #39977b;
     text-decoration: none;
+    font-size: larger;
 }
 
 section {
     padding: 50px;
     text-align: center;
+}
+
+input,textarea{
+    background-color: #c1eade;
+    width: 170px;
+
+}
+
+ button {
+  background-color:#39977b;
+  color: white;
 }
 
 #projects ul {
@@ -43,7 +72,7 @@ section {
 
 /* Gallery Section */
 #gallery {
-  background: #fafafa;
+  background: #a1e9d4;
 }
 
 .gallery {
@@ -71,3 +100,44 @@ section {
   transform: scale(1.1);
   filter: brightness(80%);
 }
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode ul li a {
+    color: #a04545;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.dark-mode #gallery {
+  background: #dd7f7f;
+}
+.dark-mode nav {
+  background-color:#dda5a5;
+}
+
+.dark-mode section {
+  background-color: #dd7f7f;
+}
+
+.dark-mode .project,
+.dark-mode .gallery-item {
+  background-color: #1f1f1f;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color:#dda5a5;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode button {
+  background-color: #9e5353;
+  color: white;
+}
+
